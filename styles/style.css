@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 36px;
+  color: rgb(231, 114, 134);
+  text-shadow: 1px 1px 0 rgb(235, 192, 199);
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.title:hover {
+  text-shadow: 2px 2px 0 rgb(235, 192, 199), 3px 3px 0 rgb(235, 192, 199),
+    4px 4px 0 rgb(235, 192, 199);
+}
+
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  transition: all 1s ease-in-out 0.25s;
+}
+
+.box1 {
+  border: 5px solid transparent;
+  background-color: green;
+}
+
+.box1:hover {
+  border: 5px solid green;
+  border-top-left-radius: 100% 20px;
+  border-bottom-right-radius: 100% 20px;
+  background-color: greenyellow;
+}
+
+.box2 {
+  border: 5px inset transparent;
+  background-color: orangered;
+}
+
+.box2:hover {
+  background-color: orange;
+  border: 5px inset orangered;
+}
+
+.box3 {
+  background-color: lightblue;
+  border: 5px solid rgb(43, 179, 224);
+  outline: 5px solid transparent;
+}
+
+.box3:hover {
+  outline: 5px solid blue;
+  outline-offset: 5px;
+}
+
+.box4 {
+  background-color: purple;
+}
+
+.box4:hover {
+  width: 240px;
+  height: 70px;
+  box-shadow: 0 15px 15px -10px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.content {
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  top: 14%;
+  z-index: -1;
+  font-size: 24px;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  transition-duration: 1s;
+  transition-delay: 0.25s;
+}
+
+.square1 {
+  background-color: lightcoral;
+  transform-origin: left top;
+}
+
+.square2 {
+  background-color: lightskyblue;
+  transform-origin: right top;
+}
+
+.square3 {
+  background-color: limegreen;
+  transform-origin: left bottom;
+}
+
+.square4 {
+  background-color: lightsalmon;
+  transform-origin: right bottom;
+}
+
+.wrapper:hover .square1 {
+  transform: rotate(90deg);
+}
+
+.wrapper:hover .square2 {
+  transform: rotate(-90deg);
+}
+
+.wrapper:hover .square3 {
+  transform: rotate(-90deg);
+}
+
+.wrapper:hover .square4 {
+  transform: rotate(90deg);
+}
